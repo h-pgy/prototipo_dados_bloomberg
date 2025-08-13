@@ -35,3 +35,4 @@ def load_env_var(varname:str)->str:
 
 TIME_BETWEEN_REQUESTS = int(load_env_var('TIME_BETWEEN_REQUESTS'))
 TOKEN_OLHO_VIVO = load_env_var('TOKEN_OLHO_VIVO')
+DB_STRING = load_env_var('DB_STRING')

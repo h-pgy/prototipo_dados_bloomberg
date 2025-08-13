@@ -1,5 +1,5 @@
 from .base_client import BaseClient
-from config import TOKEN_OLHO_VIVO
+from source.config import TOKEN_OLHO_VIVO
 from typing import Optional
 
 class APIOlhoVivoClient(BaseClient):
@@ -29,7 +29,7 @@ class APIOlhoVivoClient(BaseClient):
         else:
             raise RuntimeError('Falha na autenticação com a API Olho Vivo')
         
-    def get_posicao_onibus(self)->dict:
+    def get_posicoes_onibus(self)->dict:
 
         endpoint = 'Posicao'
 
